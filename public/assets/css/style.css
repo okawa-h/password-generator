@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+.outputs .textarea {
+  font-family: 'Prompt', sans-serif;
+  font-weight: light; }
+
+html,
+body {
+  font-family: 'Prompt', sans-serif; }
+
+.title, .generate {
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold; }
+
+@-webkit-keyframes hogehoge {
+  0% { }
+  100% { } }
+
+@keyframes hogehoge {
+  0% { }
+  100% { } }
+
+* {
+  box-sizing: border-box; }
+  *::before, *::after {
+    box-sizing: inherit; }
+
+html,
+body {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+          appearance: none; }
+
+img {
+  width: 100%;
+  pointer-events: none; }
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px;
+  background-color: #f1f5f7; }
+
+.frame {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 32px;
+  background: #fff; }
+
+.wrap {
+  padding: 64px; }
+
+.title {
+  color: #616a77;
+  font-size: 32px; }
+
+.outputs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 8px;
+  margin-top: 24px; }
+  .outputs .textarea {
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #d4dce0;
+    font-size: 16px;
+    text-align: center; }
+
+.configs {
+  margin-top: 32px; }
+  .configs-item {
+    display: flex;
+    align-items: center;
+    margin-top: 12px; }
+    .configs-item:first-of-type {
+      margin-top: 0; }
+  .configs .input-number {
+    width: 48px;
+    margin-left: 6px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f5f7;
+    text-align: right; }
+
+.generate {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: #fff;
+  font-size: 18px;
+  text-align: center; }
+
+@media (min-width: 750px) {
+  .only-sp {
+    display: none; } }
+
+@media (max-width: 749px) {
+  .only-pc {
+    display: none; } }
