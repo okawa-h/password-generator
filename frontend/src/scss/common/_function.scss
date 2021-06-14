@@ -1,0 +1,16 @@
+@function image-url($url) {
+  @return url("#{$image_directory}#{$url}");
+}
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function easing($key) {
+  @return map-get($easings, $key);
+}
+
+@function vw($size, $viewport: $pc_min_width) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}

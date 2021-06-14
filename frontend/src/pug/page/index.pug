@@ -1,0 +1,14 @@
+extends /layout/_default-layout
+
+prepend config-block
+  -
+    page_name = 'ページ名'
+    page_description = 'ページ独自のディスクリプションです。'
+    page_path = ''
+
+include /components/plain-text
+
+block content-block
+  .wrap
+    +plain-text('text')
+    img(src=getImage('image.png'))
