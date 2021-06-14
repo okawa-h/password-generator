@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ページ名｜サイト名（※ページ名ではないです）</title>
+    <link rel="canonical" href="https://graphic.co.jp/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&amp;display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet"></head>
+  <body>
+    <div class="all">
+      <div class="frame">
+        <div class="wrap">
+          <h1 class="title">Password Generator</h1>
+          <div class="outputs">
+            <input class="textarea" type="text" data-js-password="output">
+          </div>
+          <div class="configs">
+            <label class="configs-item">
+              <div class="configs-item-name">Word Length</div>
+              <input class="input-number" type="number" data-js-config="wordLength" value="8">
+            </label>
+            <label class="configs-item">
+              <div class="configs-item-name">Include Uppercase</div>
+              <input type="checkbox" data-js-config="includeUpper" checked>
+              <div class="configs-item-checkbox"></div>
+            </label>
+            <label class="configs-item">
+              <div class="configs-item-name">Include Lowercase</div>
+              <input type="checkbox" data-js-config="includeLower" checked>
+              <div class="configs-item-checkbox"></div>
+            </label>
+            <label class="configs-item">
+              <div class="configs-item-name">Include Number</div>
+              <input type="checkbox" data-js-config="includeNumber" checked>
+              <div class="configs-item-checkbox"></div>
+            </label>
+            <label class="configs-item">
+              <div class="configs-item-name">Include Symbols</div>
+              <input type="checkbox" data-js-config="includeSymbols">
+              <div class="configs-item-checkbox"></div>
+            </label>
+          </div>
+          <button class="generate" data-js-password="generate">GENERATE</button>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/assets/js/script.js"></script></body>
+</html>
