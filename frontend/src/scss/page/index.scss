@@ -1,0 +1,80 @@
+html,
+body {
+  @extend %font-medium;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px;
+  background-color: #f1f5f7;
+}
+
+.frame {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 32px;
+  background: #fff;
+}
+
+.wrap {
+  padding: 64px;
+}
+
+.title {
+  @extend %font-bold;
+  color: #616a77;
+  font-size: 32px;
+}
+
+.outputs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 8px;
+  margin-top: 24px;
+  .textarea {
+    @extend %font-light;
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #d4dce0;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.configs {
+  margin-top: 32px;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+  .input-number {
+    width: 48px;
+    margin-left: 6px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f5f7;
+    text-align: right;
+  }
+}
+
+.generate {
+  @extend %font-bold;
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}

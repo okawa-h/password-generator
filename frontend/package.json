@@ -8,7 +8,7 @@
   "scripts": {
     "build": "NODE_ENV=product webpack --mode production --progress",
     "build-dev": "NODE_ENV=development webpack --mode production --progress",
-    "start": "NODE_ENV=development webpack-dev-server --mode development --inline --open"
+    "start": "NODE_ENV=product webpack-dev-server --mode development --inline --open"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
