@@ -6,9 +6,30 @@ prepend config-block
     page_description = 'ページ独自のディスクリプションです。'
     page_path = ''
 
-include /components/plain-text
-
 block content-block
-  .wrap
-    +plain-text('text')
-    img(src=getImage('image.png'))
+  .frame
+    .wrap
+      h1.title Password Generator
+      .outputs
+        input.textarea(type='text' data-js-password='output')
+      .configs
+        label.configs-item
+          .configs-item-name Word Length
+          input.input-number(type='number' data-js-config='wordLength' value='8')
+        label.configs-item
+          .configs-item-name Include Uppercase
+          input(type='checkbox' data-js-config='includeUpper' checked)
+          .configs-item-checkbox
+        label.configs-item
+          .configs-item-name Include Lowercase
+          input(type='checkbox' data-js-config='includeLower' checked)
+          .configs-item-checkbox
+        label.configs-item
+          .configs-item-name Include Number
+          input(type='checkbox' data-js-config='includeNumber' checked)
+          .configs-item-checkbox
+        label.configs-item
+          .configs-item-name Include Symbols
+          input(type='checkbox' data-js-config='includeSymbols')
+          .configs-item-checkbox
+      button.generate(data-js-password='generate') GENERATE
